@@ -29,7 +29,7 @@
               total_votes = total_votes + 1
     ```
     
-2. Provide a breakdown of the numnber of votes and the percentage of total votes for each county in the precinct.
+2. Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
    * The breakdown is as follows:
       * Jefferson: 38,855 - 10.5%
       * Denver: 306,055 - 82.8%
