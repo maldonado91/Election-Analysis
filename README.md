@@ -27,6 +27,7 @@ In addition to gathering the county data, we also needed to save results in a tx
               # Add to the total vote count
               total_votes = total_votes + 1
     ```
+    
 * Provide a breakdown of the numnber of votes and the percentage of total votes for each county in the precinct.
    * The breakdown is as follows:
       * Jefferson: 38,855 - 10.5%
@@ -47,8 +48,10 @@ In addition to gathering the county data, we also needed to save results in a tx
         county_votes[county_name] += 1
     ```
    * This allowed us to do the math in calculating totals and percentages
+   
 * Which county had the largest number of votes
    *  The county with the largest amount of votes was Denver with 306,055 (82.8%)
+   
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received
    * Identical to counties, we added up the total votes through the loop above. See code below:
    ```
@@ -65,7 +68,11 @@ In addition to gathering the county data, we also needed to save results in a tx
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
    ```
-   
+
+* What candidate won the election, what was their vote count, and what was their percentage of the total votes?
+   * The winning candidate was Diana DeGette with 272,892 votes (73.8%)
+
+
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
 ![All-Stocks_2017](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2017.png) ![All-Stocks_2018](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2018.png)
 #### However, the run time was much different in both instances. We saw much faster times, therefore, acheiving our goals of enhancing code performance.
