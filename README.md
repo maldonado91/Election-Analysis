@@ -11,10 +11,10 @@ In addition to gathering the county data, we also need to save results in a txt 
 
 ### 2. Election-Audit Results:
 * How many votes were cast in this congressional election?
-Election Results
--------------------------
-Total Votes: 369,711
--------------------------
+<!--     Election Results
+    -------------------------
+    Total Votes: 369,711
+    ------------------------- -->
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
 ![All-Stocks_2017](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2017.png) ![All-Stocks_2018](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2018.png)
 #### However, the run time was much different in both instances. We saw much faster times, therefore, acheiving our goals of enhancing code performance.
