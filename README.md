@@ -14,18 +14,18 @@ In addition to gathering the county data, we also need to save results in a txt 
     * There were a total of 369,711 votes
     * We found results by looping through the data and tallying 1 to every row. See sameple code below:
     ```
-    # Read the csv and convert it into a list of dictionaries
-with open(file_to_load) as election_data:
-    reader = csv.reader(election_data)
+      # Read the csv and convert it into a list of dictionaries
+      with open(file_to_load) as election_data:
+          reader = csv.reader(election_data)
 
-    # Read the header
-    header = next(reader)
+          # Read the header
+          header = next(reader)
 
-    # For each row in the CSV file.
-    for row in reader:
+          # For each row in the CSV file.
+          for row in reader:
 
-        # Add to the total vote count
-        total_votes = total_votes + 1
+              # Add to the total vote count
+              total_votes = total_votes + 1
     ```
     
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
