@@ -10,7 +10,7 @@
 In addition to gathering the county data, we also needed to save results in a txt file.
 
 ### 2. Election-Audit Results:
-* How many votes were cast in this congressional election?
+1. How many votes were cast in this congressional election?
     * There were a total of 369,711 votes
     
     * We found results by looping through the data and tallying 1 to total_votes variable. See sameple code below:
@@ -29,7 +29,7 @@ In addition to gathering the county data, we also needed to save results in a tx
               total_votes = total_votes + 1
     ```
     
-* Provide a breakdown of the numnber of votes and the percentage of total votes for each county in the precinct.
+2. Provide a breakdown of the numnber of votes and the percentage of total votes for each county in the precinct.
    * The breakdown is as follows:
       * Jefferson: 38,855 - 10.5%
       * Denver: 306,055 - 82.8%
@@ -52,10 +52,10 @@ In addition to gathering the county data, we also needed to save results in a tx
     
    * This allowed us to do the math in calculating totals and percentages
    
-* Which county had the largest number of votes
+3. Which county had the largest number of votes
    *  The county with the largest amount of votes was Denver with 306,055 (82.8%)
    
-* Provide a breakdown of the number of votes and the percentage of the total votes each candidate received
+4. Provide a breakdown of the number of votes and the percentage of the total votes each candidate received
    * Identical to counties, we added up the total votes through the loop above. See code below:
    ```
         # If the candidate does not match any existing candidate add it to
@@ -72,7 +72,7 @@ In addition to gathering the county data, we also needed to save results in a tx
         candidate_votes[candidate_name] += 1
    ```
 
-* What candidate won the election, what was their vote count, and what was their percentage of the total votes?
+5. What candidate won the election, what was their vote count, and what was their percentage of the total votes?
    * The winning candidate was Diana DeGette with 272,892 votes (73.8%)
 
 
