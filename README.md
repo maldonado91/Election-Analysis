@@ -12,7 +12,7 @@ In addition to gathering the county data, we also needed to save results in a tx
 ### 2. Election-Audit Results:
 * How many votes were cast in this congressional election?
     * There were a total of 369,711 votes
-    * We found results by looping through the data and tallying 1 to every row. See sameple code below:
+    * We found results by looping through the data and tallying 1 to total_votes variable. See sameple code below:
     ```
       # Read the csv and convert it into a list of dictionaries
       with open(file_to_load) as election_data:
@@ -32,7 +32,39 @@ In addition to gathering the county data, we also needed to save results in a tx
       * Jefferson: 38,855 - 10.5%
       * Denver: 306,055 - 82.8%
       * Arapahoe: 24,801 - 6.7%
-   
+   * By adding up the total votes through the loop above, we then added all the votes for each respective county. See code below
+   ```
+        # county does not match any existing county in the county list.
+        if county_name not in county_options:
+
+            # 4b: Add the existing county to the list of counties.
+            county_options.append(county_name)
+
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county_name] = 0
+
+        # 5: Add a vote to that county's vote count.
+        county_votes[county_name] += 1
+    ```
+   * This allowed us to do the math in calculating totals and percentages
+* Which county had the largest number of votes
+   *  The county with the largest amount of votes was Denver with 306,055 (82.8%)
+* Provide a breakdown of the number of votes and the percentage of the total votes each candidate received
+   * Identical to counties, we added up the total votes through the loop above. See code below:
+   ```
+        # If the candidate does not match any existing candidate add it to
+        # the candidate list
+        if candidate_name not in candidate_options:
+
+            # Add the candidate name to the candidate list.
+            candidate_options.append(candidate_name)
+
+            # And begin tracking that candidate's voter count.
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
+   ```
    
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
 ![All-Stocks_2017](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2017.png) ![All-Stocks_2018](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2018.png)
