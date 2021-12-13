@@ -7,7 +7,7 @@
 * The percentage of votes from each county out of the total count
 * The county with the highest turnout
 
-In addition to gathering the county data, we also need to save results in a txt file.
+In addition to gathering the county data, we also needed to save results in a txt file.
 
 ### 2. Election-Audit Results:
 * How many votes were cast in this congressional election?
@@ -27,7 +27,13 @@ In addition to gathering the county data, we also need to save results in a txt 
               # Add to the total vote count
               total_votes = total_votes + 1
     ```
-    
+* Provide a breakdown of the numnber of votes and the percentage of total votes for each county in the precinct.
+   * The breakdown is as follows:
+      * Jefferson: 38,855 - 10.5%
+      * Denver: 306,055 - 82.8%
+      * Arapahoe: 24,801 - 6.7%
+   
+   
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
 ![All-Stocks_2017](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2017.png) ![All-Stocks_2018](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2018.png)
 #### However, the run time was much different in both instances. We saw much faster times, therefore, acheiving our goals of enhancing code performance.
