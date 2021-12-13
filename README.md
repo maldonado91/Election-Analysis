@@ -81,5 +81,5 @@
 
 #### This piece of code can be used to for more than just candidates and counties election results depending on what is available. Example:
 1. If we have additional columns like maybe year, political party, etc, we can summarize the results just like we did candidate and county. We would just need to create respective varaible for any new column field and include in the for loop that tallies the vote counts.
-2. Assuming we add more columns (i.e year, political party) we can calculate additional metrics. Possibilites include the average voter turnout by year or average turnout by political party.
+2. Assuming we add more columns (i.e year, political party) we can calculate additional metrics. Possibilites include the average voter turnout by year or average turnout by political party. The more data we collect, the better.
 #### Finalized python code can be found [here](https://github.com/maldonado91/Election-Analysis/blob/main/PyPoll_Challenge.py)
