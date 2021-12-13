@@ -50,7 +50,7 @@
         county_votes[county_name] += 1
     ```
     
-   * This allowed us to do the math in calculating totals and percentages
+   * This allowed us to do the math in calculating totals and percentages later on
    
 3. Which county had the largest number of votes
    *  The county with the largest amount of votes was Denver with 306,055 (82.8%)
