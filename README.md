@@ -12,6 +12,7 @@ In addition to gathering the county data, we also needed to save results in a tx
 ### 2. Election-Audit Results:
 * How many votes were cast in this congressional election?
     * There were a total of 369,711 votes
+    
     * We found results by looping through the data and tallying 1 to total_votes variable. See sameple code below:
     ```
       # Read the csv and convert it into a list of dictionaries
@@ -33,6 +34,7 @@ In addition to gathering the county data, we also needed to save results in a tx
       * Jefferson: 38,855 - 10.5%
       * Denver: 306,055 - 82.8%
       * Arapahoe: 24,801 - 6.7%
+      
    * By adding up the total votes through the loop above, we then added all the votes for each respective county. See code below
    ```
         # county does not match any existing county in the county list.
@@ -47,6 +49,7 @@ In addition to gathering the county data, we also needed to save results in a tx
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
     ```
+    
    * This allowed us to do the math in calculating totals and percentages
    
 * Which county had the largest number of votes
