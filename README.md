@@ -75,8 +75,11 @@ In addition to gathering the county data, we also needed to save results in a tx
 5. What candidate won the election, what was their vote count, and what was their percentage of the total votes?
    * The winning candidate was Diana DeGette with 272,892 votes (73.8%)
 
+### 3. Election-Audit Summary:
 #### An overview of the results are outlied below:
 ![Election Results](https://github.com/maldonado91/Election-Analysis/blob/main/Resources/ElectionSummary.PNG)
+
+#### A finalized python file can be found [here](https://github.com/maldonado91/Election-Analysis/blob/main/Resources/ElectionSummary.PNG)
 
 #### After refactoring the code the analysis for all stock 2017 and 2018 displayed the exact same results. 
 ![All-Stocks_2017](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2017.png) ![All-Stocks_2018](https://github.com/maldonado91/Stock-Analysis/blob/main/Resources/All_Stocks_2018.png)
