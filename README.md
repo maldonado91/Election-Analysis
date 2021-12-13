@@ -13,7 +13,7 @@
 1. How many votes were cast in this congressional election?
     * There were a total of 369,711 votes
     
-    * We found results by looping through the data and tallying 1 to the total_votes variable. See sameple code below:
+    * We found results by looping through the data and tallying 1 to the total_votes variable. See sample code below:
     ```
       # Read the csv and convert it into a list of dictionaries
       with open(file_to_load) as election_data:
